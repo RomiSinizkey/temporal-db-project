@@ -318,6 +318,41 @@ This allows:
 - “What value would the doctor see back then?”
 
 -------------------
+## ✅ Verified Project Scenarios
+
+The following core scenarios from the project specification have been tested and validated:
+
+| Scenario                                    | Description                                              | Expected Result | Status |
+| ------------------------------------------- | -------------------------------------------------------- | --------------- | ------ |
+| Query 1                                     | Specific date-time, earlier perspective                  | 111             | ✅      |
+| Query 2                                     | Same date-time, later perspective                        | 100             | ✅      |
+| Query 3                                     | Date only, latest alive measurement                      | 67              | ✅      |
+| After Logical Delete                        | Date only, after logical deletion of a later measurement | 78              | ✅      |
+| Historical Perspective (change system time) | Same date only, but older system time → older value      | 67              | ✅      |
+
+
+---
+## E.G for the questions from project_db_2025:
+uploads Exel file:
+![img.png](img.png)
+
+###  Answers:
+-    -  question 1:
+     ![img_1.png](img_1.png)
+-   - question 2:
+     ![img_2.png](img_2.png)
+-   - question 3:
+    ![img_3.png](img_3.png)
+-   -question 4: 
+   ![img_4.png](img_4.png)
+-   -question 5:
+   ![img_5.png](img_5.png)
+-   -question 6:
+   ![img_6.png](img_6.png)  ![img_7.png](img_7.png)
+     
+    
+
+---
 
 ## 🧪 Bi-Temporal Logic Explanation
 
@@ -336,6 +371,8 @@ This allows:
 - Historical queries can reconstruct what the database “looked like” at any past system time.
 
 ------------------
+
+
 ## 🔐 Offline Guarantee
 
 This project runs completely offline:
